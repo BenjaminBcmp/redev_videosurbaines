@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:////Users/Benjamin/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.5.1/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      <link rel="stylesheet" href="file:////Users/Benjamin/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.5.2/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
       
       
 
@@ -328,49 +328,22 @@ L&apos;inf&#xE9;rence sera effectu&#xE9;e sur le GPU (certains algorithmes utili
 <td>Le plus performant de detectron2 (prendre lr sched x3)</td>
 </tr>
 <tr>
-<td>R-FCN</td>
-<td>R101</td>
-<td>Object(2)</td>
-<td>boxAP, tpsInfMoy</td>
-<td><a href="https://github.com/IntelAI/models/tree/master/benchmarks/object_detection/tensorflow/rfcn">Lien</a></td>
-<td>Apache 2.0</td>
-<td>Prendre le mod&#xE8;le avec pr&#xE9;cision int8 (plus rapide)</td>
-</tr>
-<tr>
-<td>YOLOv3</td>
+<td>YOLOv3-608</td>
 <td>Darknet-53</td>
 <td>Object(1)</td>
 <td>boxAP, tpsInfMoy</td>
 <td><a href="https://pjreddie.com/darknet/yolo/">Lien</a></td>
 <td><a href="https://github.com/pjreddie/darknet/blob/master/LICENSE">Lien</a></td>
-<td>Attention, entrain&#xE9; sur COCO train+val 2014</td>
+<td>Entrain&#xE9; sur COCO train+val 2014</td>
 </tr>
 <tr>
 <td>Tiny YOLOv3</td>
-<td>x</td>
+<td>-</td>
 <td>Object(1)</td>
 <td>boxAP, tpsInfMoy</td>
 <td><a href="https://pjreddie.com/darknet/yolo/">Lien</a></td>
 <td><a href="https://github.com/pjreddie/darknet/blob/master/LICENSE">Lien</a></td>
-<td>Attention, entrain&#xE9; sur COCO train+val 2014</td>
-</tr>
-<tr>
-<td>SSD300</td>
-<td>x</td>
-<td>Object(1)</td>
-<td>boxAP, tpsInfMoy</td>
-<td><a href="https://github.com/weiliu89/caffe/tree/ssd">Lien</a></td>
-<td><a href="https://github.com/weiliu89/caffe/blob/master/LICENSE">Lien</a></td>
-<td></td>
-</tr>
-<tr>
-<td>SSD512</td>
-<td>x</td>
-<td>Object(1)</td>
-<td>boxAP, tpsInfMoy</td>
-<td><a href="https://github.com/weiliu89/caffe/tree/ssd">Lien</a></td>
-<td><a href="https://github.com/weiliu89/caffe/blob/master/LICENSE">Lien</a></td>
-<td></td>
+<td>Entrain&#xE9; sur COCO train+val 2014</td>
 </tr>
 <tr>
 <td>RetinaNet</td>
@@ -406,7 +379,16 @@ L&apos;inf&#xE9;rence sera effectu&#xE9;e sur le GPU (certains algorithmes utili
 <td>boxAP, maskAP, tpsInfMoy</td>
 <td><a href="https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md">Lien</a></td>
 <td>Apache 2.0</td>
-<td>Choisir class agnostic bbox reg: true</td>
+<td>lr sched x3</td>
+</tr>
+<tr>
+<td>Panoptic FPN</td>
+<td>R50-FPN</td>
+<td>Panoptic</td>
+<td>boxAP, maskAP, PQ, tpsInfMoy</td>
+<td><a href="https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md">Lien</a></td>
+<td>Apache 2.0</td>
+<td>lr sched x3</td>
 </tr>
 <tr>
 <td>Panoptic FPN</td>
@@ -415,7 +397,7 @@ L&apos;inf&#xE9;rence sera effectu&#xE9;e sur le GPU (certains algorithmes utili
 <td>boxAP, maskAP, PQ, tpsInfMoy</td>
 <td><a href="https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md">Lien</a></td>
 <td>Apache 2.0</td>
-<td>Pas de test avec R50 car les temps d&apos;inf&#xE9;rence sont similaires</td>
+<td>lr sched x3</td>
 </tr>
 <tr>
 <td>DeepLabv3+</td>
