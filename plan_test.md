@@ -28,7 +28,7 @@ La taille (en MB) de chaque modèle sera aussi relevée.
 Les tests seront effectués sur [Google Colab](colab.research.google.com/) afin d'utiliser l'environnement d'exécution mis à disposition de chaque utilisateur.
 L'inférence sera effectuée sur le GPU (certains algorithmes utilisent aussi le CPU en parallèle). Cet environnement comporte :
 
-- GPU : Tesla P100 (16 Go de RAM)
+- GPU : Tesla T4 (16 Go de RAM)
 - CPU : Intel(R) Xeon(R) CPU @ 2.00GHz (1 core)
 - 13 Go de RAM
 
