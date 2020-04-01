@@ -1,0 +1,1 @@
+python converters/panoptic2detection_coco_format.py --input_json_file ../datasets/coco/annotations/panoptic_val2017.json --output_json_file ../datasets/coco/annotations/semantic_val2017.json

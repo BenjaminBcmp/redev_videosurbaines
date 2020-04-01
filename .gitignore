@@ -1,5 +1,37 @@
+# macos files
 .DS_Store
+# vscode
+.vscode/
+# Python virtual environment
 .venv/
-**/images/
+# Images
+**/images*/
+*.png
+# Dataset files
+annotations/
+# Output files
+logs.txt
+outputs.json
+# Checkpoints for the models
 models/
+# Cache files for jupyter and python
 .ipynb_checkpoints/
+__pycache__/
+# Clone of https://github.com/pytorch/vision/ used for the training scripts
+vision/
+# Clone of https://github.com/cocodataset/panopticapi used to convert panoptic annotations to semantic annotations
+panopticapi/
+# Clone of https://github.com/eriklindernoren/PyTorch-YOLOv3
+PyTorch-YOLOv3/
+# Clone of https://github.com/lvsn/6DOF_tracking_evaluation
+6DOF_tracking_evaluation/
+# zips of datasets
+*.zip
+# COCO images
+val2017/
+train2017/
+panoptic_train2017/
+panoptic_val2017/
+
+# Inference videos
+video/
